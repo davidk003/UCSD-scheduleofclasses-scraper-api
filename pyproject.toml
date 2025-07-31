@@ -1,0 +1,42 @@
+[project]
+name = "ucsd-scheduleofclasses-scraper-api"
+version = "0.1.0"
+description = "API for getting information from UCSD's schedule of classes."
+authors = [
+    {name = "david",email = "dck003@ucsd.edu"}
+]
+license = {text = "AGPLv3"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiohttp (>=3.12.15,<4.0.0)",
+    "requests (>=2.32.4,<3.0.0)",
+    "lxml (>=6.0.0,<7.0.0)",
+    "beautifulsoup4 (>=4.13.4,<5.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "ucsd_schedule_api"}]
+
+[tool.poetry.scripts]
+test = "scripts.run_tests:main"
+
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+pytest-cov = "^6.2.1"
+black = "^25.1.0"
+flake8 = "^7.3.0"
+mypy = "^1.17.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
