@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+
+
+<title>Student/Class Info</title>
+<link rel="stylesheet" href="./Student_Class Info_files/base-min.css">
+<style type="text/css">
+#tdr_banner {
+	background: transparent url(//students.ucsd.edu/_resources/current_students/css/images/triton-banner.png) center top no-repeat;
+	height: 52px;
+	margin: 0 auto;
+	max-width: 960px;
+	width: 98%;
+}
+
+body.fluid #tdr_banner {
+	max-width: none;
+}
+</style>
+<style type="text/css">
+#tdr_nav ul #current_students_nav a {
+	background: transparent url(//students.ucsd.edu/_resources/student_global/css/images/current_students_primary_nav.png) 2px 0 no-repeat;
+	background-color: #E3EDF8;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-indent: -9999px;
+    width: 94px;
+}
+
+#tdr_nav ul #current_students_nav a:hover {
+	background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 768px) {
+	#tdr_nav ul #current_students_nav a {
+		width: auto;
+	}
+}
+</style>
+<script type="text/javascript" async="" src="./Student_Class Info_files/ga.js.download"></script><script src="./Student_Class Info_files/base-min.js.download"></script>
+<script src="./Student_Class Info_files/message.js.download"></script>
+
+
+
+
+
+	
+	
+    <script type="text/javascript" src="./Student_Class Info_files/submit_form.js.download"></script>
+    
+<meta name="webapp.name" content="Instruction Tools">
+<meta name="webapp.url" content="http://blink.ucsd.edu/instructors/index.html">
+<meta name="display.crumbs" content="none">
+<meta name="display.search" content="none">
+
+<link href="./Student_Class Info_files/sch_classes.css" type="text/css" rel="stylesheet" media="all">
+<link href="./Student_Class Info_files/jquery-ui-min.css" media="all" rel="stylesheet" type="text/css">
+<link href="./Student_Class Info_files/jquery.dataTables-min.css" media="all" rel="stylesheet" type="text/css">
+<script src="./Student_Class Info_files/jquery-ui-min.js.download" type="text/javascript"></script>
+<script src="./Student_Class Info_files/jquery.dataTables-min.js.download" type="text/javascript"></script>
+
+<script type="text/javascript" src="./Student_Class Info_files/sch.js.download"></script>
+<script type="text/javascript" src="./Student_Class Info_files/tab_views.js.download"></script>
+<style type="text/css">
+span.bold-red {
+	color: red;
+	font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+	
+
+
+
+
+
+
+
+
+
+<!-- env -->
+
+<!-- emergency -->
+<div id="uc-emergency"></div>
+<!-- skip to content -->
+<a class="skip-link" href="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm#tdr_content">Skip to content</a>
+<!-- login -->
+
+<div id="tdr_login" style="display: none"></div>
+<script type="text/javascript">
+(function($) {
+    $(document).ready(function() {
+        $.ajax({
+            url: "https://a4.ucsd.edu/tritON/resources/bugscript.jsp?target=https%3A%2F%2Fwww.ucsd.edu&jsoncallback=?",
+            dataType: 'jsonp',
+            jsonpCallback: 'a4sso',
+            success: function(data) {
+                if (data.eduUcsdActLoggedin) {
+                    var url = "<div id=\"tdr_login_content\">You are logged in | <a href=\"/security/student/logout?url=";
+                    url += "http://students.ucsd.edu";
+                    url += "\">Log Out</a></div>";
+                    $("#tdr_login").empty();
+                    $("#tdr_login").append(url);
+                    $("#tdr_login").attr("style", "display:block");
+                }
+            },
+            error: function(jqXHR, textStatus) {
+                console.log("error trying to communicate with a4 sso: " + textStatus);
+            }
+        });
+    });
+})(jQuery);
+</script>
+
+
+	<!-- title -->
+	<div id="tdr_title">
+		<div id="tdr_title_content">
+			<a id="tdr_title_ucsd_title" href="http://www.ucsd.edu/">UC San Diego</a>
+			<div id="tdr_title_page_title">
+				<a href="https://act.ucsd.edu/myTritonlink20">My TritonLink</a>
+			</div>
+			<a id="tdr_title_search_link" class="search-button" style="display: none">Search</a>
+            <a id="tdr_title_menu_link">Menu</a>
+		</div>
+	</div>
+<!-- $Id: academic-student-current.jsp 1219 2024-02-02 22:51:11Z devhar $ -->
+
+<div id="tdr_nav" style="display: ">
+    <div id="tdr_nav_content">
+        <ul id="tdr_nav_list" class="sf-js-enabled sf-shadow">
+            <li id="current_students_nav"><a href="http://tritonlink.ucsd.edu/">TritonLink</a></li>
+            <li class="dropdown"><a aria-expanded="false" class="dropdown-toggle" data-close-others="true" data-hover="dropdown" href="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm">Advising &amp; Grades</a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a href="https://act.ucsd.edu/studentAcademicHistory/academichistorystudentdisplay.htm">Academic History</a></li>
+                    <li><a href="https://myccr.ucsd.edu/home.htm">Co-Curricular Record</a></li>
+                    <li><a href="https://act.ucsd.edu/studentDars/select">Degree Audit</a></li>
+                    <li><a href="https://degree-planner.ucsd.edu/">Degree Planner</a></li>
+                    <li><a href="http://ucsd.edu/catalog/">General Catalog</a></li>
+                    <li><a href="https://act.ucsd.edu/studentGpa/gpa">GPA Calculator</a></li>
+                    <li><a href="https://act.ucsd.edu/studentMajorMinorChange2/majorminorchange">Major &amp; Minor</a></li>
+                    <li><a href="http://real.ucsd.edu/">REAL Portal</a></li>
+                    <li><a href="https://act.ucsd.edu/studentETranscript/order.htm">Order Official Documents</a></li>
+                    <li><a href="http://vac.ucsd.edu/">Virtual Advising Center</a></li>
+                </ul></li>
+            <li class="dropdown"><a aria-expanded="false" class="dropdown-toggle" data-close-others="true" data-hover="dropdown" href="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm">Classes &amp; Enrollment</a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a href="https://academicaffairs.ucsd.edu/Modules/Students/PreAuth">Enrollment Authorization System (EASy)</a></li>
+                    <li><a href="https://act.ucsd.edu/studentHolds/holds">Holds</a></li>
+                    <li><a href="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm">Schedule of Classes</a></li>
+                    <li><a href="https://canvas.ucsd.edu/">Canvas</a></li>
+                    <li><a href="https://act.ucsd.edu/webreg2">WebReg</a></li>
+                </ul></li>
+            <li class="dropdown"><a aria-expanded="false" class="dropdown-toggle" data-close-others="true" data-hover="dropdown" href="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm">Financial Tools</a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a href="https://itsweb.ucsd.edu/studentEBill2/StudentBilling">Billing and Payment</a></li>
+                    <li><a href="https://itsweb.ucsd.edu/studentDirectDeposit2/DirectDeposit">Students Direct Deposit</a></li>
+                    <li><a href="https://act.ucsd.edu/studentFinancialAid/financialaiddisplay.htm">Financial Aid</a></li>
+                    <li><a href="https://act.ucsd.edu/studentShsHealthWaiver/healthwaiverdisplay.htm">Health Fee Waiver/RAFT</a></li>                    
+            		<li><a href="https://ucsd-transportation.t2hosted.com/Account/Portal">Parking Permits</a></li>
+                    <li><a href="https://student-sis.ucsd.edu/studenttuitioninformation">Tuition Information</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a aria-expanded="false" class="dropdown-toggle" data-close-others="true" data-hover="dropdown" href="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm">Personal Tools</a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a href="https://act.ucsd.edu/studentAddresses2/addresses">Addresses</a></li>
+                    <li><a href="https://act.ucsd.edu/studentAddresses2/infoRestrictions">Public Information Restriction</a></li>
+                    <li><a href="https://act.ucsd.edu/studentAddresses2/socialIdentities">Social Identities</a></li>
+                    <li><a href="https://ucsd.joinhandshake.com/">Handshake</a></li>
+                </ul></li>
+            <li class="dropdown"><a aria-expanded="false" class="dropdown-toggle" data-close-others="true" data-hover="dropdown" href="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm">Student Forms</a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a href="http://students.ucsd.edu/finances/financial-aid/forms/">Financial Aid Forms</a></li>
+                    <li><a href="http://students.ucsd.edu/my-tritonlink/forms/">All Forms</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a aria-expanded="false" class="dropdown-toggle" data-close-others="true" data-hover="dropdown" href="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm">Help</a>
+                <ul style="display: none; visibility: hidden;">
+                    <li><a href="http://www.ucsd.edu/current-students/my-tritonlink/tools/tool-help/index.html">MyTritonLink Tools Help</a></li>
+                    <li><a href="https://act.ucsd.edu/cwp/feedback/help/tritonlink" onclick="window.open(&#39;//act.ucsd.edu/cwp/feedback/help/tritonlink&#39;, &#39;DYGWYW&#39;, &#39;menubar=0,resizable=1,scrollbars=1,width=450,height=650&#39;);" target="DYGWYW">Request Assistance</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<div id="tdr_search" style="display: none">
+    <div id="tdr_search_content">
+        <form action="https://act.ucsd.edu/cwp/tools/search-redir" method="get">
+            <label for="search-scope">Search</label> <select id="search-scope" name="search-scope">
+                <option selected="selected" value="tritonlink">This Site</option>
+                <option value="default_collection">All UCSD Sites</option>
+                <option value="faculty-staff">Faculty/Staff Directory</option>
+            </select> <label for="search-term" id="search-term-label">Search Term</label> <input type="search" id="search-term" name="search-term" size="20"> <input type="submit" class="search-button" value="Search">
+        </form>
+    </div>
+</div>
+<div id="tdr_banner" style="display: block"></div>
+<div id="tdr_crumbs" style="display: none">
+	<div id="tdr_crumbs_content"></div>
+</div>
+<div id="tdr_content" class="tdr_fonts itag_webapp">
+	<div id="tdr_content_content">
+		
+
+	<div>
+		<h1>Schedule of Classes</h1>
+		<form id="socFacSearch" action="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudentResult.htm" method="POST">
+			
+				<span class="bold_text">Select search term :</span>
+				<select id="selectedTerm" name="selectedTerm">
+					
+						
+							<option value="FA25">
+								Fall Quarter 2025  
+							</option>
+						
+							<option value="SA25">
+								Summer Sessions (All) 2025
+							</option>
+						
+							<option value="SU25">
+								Summer Med School 2025
+							</option>
+						
+							<option value="S325">
+								Special Summer Session 2025
+							</option>
+						
+							<option value="S225">
+								Summer Session II 2025
+							</option>
+						
+							<option value="S125">
+								Summer Sessions I 2025
+							</option>
+						
+							<option value="SP25">
+								Spring Quarter 2025
+							</option>
+						
+							<option value="WI25">
+								Winter Quarter 2025
+							</option>
+						
+							<option value="FA24">
+								Fall Quarter 2024  
+							</option>
+						
+							<option value="SA24">
+								Summer Sessions (All) 2024
+							</option>
+						
+							<option value="SU24">
+								Summer Med School 2024
+							</option>
+						
+							<option value="S324">
+								Special Summer Session 2024
+							</option>
+						
+							<option value="S224">
+								Summer Session II 2024
+							</option>
+						
+							<option value="S124">
+								Summer Sessions I 2024
+							</option>
+						
+							<option value="SP24">
+								Spring Quarter 2024
+							</option>
+						
+							<option value="WI24">
+								Winter Quarter 2024
+							</option>
+						
+							<option value="FA23">
+								Fall Quarter 2023  
+							</option>
+						
+							<option value="SA23">
+								Summer Sessions (All) 2023
+							</option>
+						
+							<option value="SU23">
+								Summer Med School 2023
+							</option>
+						
+							<option value="S323">
+								Special Summer Session 2023
+							</option>
+						
+					
+				</select>
+				<div id="invalidTerm" style="display: none;" class="msg error">
+				<h4>ATTENTION!</h4>
+				<p>Schedule Not Avaliable for the Selected Term.</p>
+			</div>
+			<br>
+			<br>
+
+				<div class="content">
+
+					 <input type="hidden" id="xsoc_term" name="xsoc_term" value="">
+				</div>
+				<br> <input type="hidden" id="loggedIn" name="loggedIn" value="false">
+
+				<div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+
+					<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+						<li>Find Courses : &nbsp;&nbsp;&nbsp;</li>
+						<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm#tabs-sub">by subject</a></li>
+						<li class="ui-state-default ui-corner-top"><a href="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm#tabs-dept">by department</a></li>
+						<li class="ui-state-default ui-corner-top"><a href="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm#tabs-crs">by code(s)</a></li>
+						<li class="ui-state-default ui-corner-top"><a href="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm#tabs-sec">by section id(s)</a></li>
+						<li class="ui-state-default ui-corner-top"><a href="https://act.ucsd.edu/scheduleOfClasses/scheduleOfClassesStudent.htm#tabs-ins">by professor or title</a></li>
+					</ul>
+
+					<input id="tabNum" name="tabNum" type="hidden" value="">
+
+					<div id="tabs-sub" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+						
+
+<div>
+	 <table>
+	 	<tbody>
+	 		<tr>
+	 			<td width="40%">
+	 			<span class="itatxt">
+	 				if you select the list you may use your keyboard to jump to a subject code<br>
+	 			</span>
+				<span class="bold_text">select one or more subjects</span> <br>
+					<select id="selectedSubjects" name="selectedSubjects" multiple="multiple" size="19">
+						
+					<option value="AIP ">AIP  - Academic Internship Program   </option><option value="AAS ">AAS  - African American Studies      </option><option value="AWP ">AWP  - Analytical Writing Program    </option><option value="ANES">ANES - Anesthesiology                </option><option value="ANBI">ANBI - Anthro/Biological Anthropology</option><option value="ANAR">ANAR - Anthropological Archaeology   </option><option value="ANTH">ANTH - Anthropology                  </option><option value="ANSC">ANSC - Anthropology/Sociocultural    </option><option value="AAPI">AAPI - Asian Am &amp; Pacific Islander St</option><option value="ASTR">ASTR - Astronomy and Astrophysics    </option><option value="BENG">BENG - Bioengineering                </option><option value="BNFO">BNFO - Bioinformatics                </option><option value="BIEB">BIEB - Biol/Ecology, Behavior, &amp; Evol</option><option value="BICD">BICD - Biol/Genetics,Cellular&amp;Develop</option><option value="BIPN">BIPN - Biology/Animal Physiol&amp;Neurosc</option><option value="BIBC">BIBC - Biology/Biochemistry          </option><option value="BGGN">BGGN - Biology/Grad/General          </option><option value="BGJC">BGJC - Biology/Grad/Journal Club     </option><option value="BGRD">BGRD - Biology/Grad/Research Discussn</option><option value="BGSE">BGSE - Biology/Grad/Seminar          </option><option value="BILD">BILD - Biology/Lower Division        </option><option value="BIMM">BIMM - Biology/Molec Biol, Microbiol </option><option value="BISP">BISP - Biology/Special Studies       </option><option value="BIOM">BIOM - Biomedical Sciences           </option><option value="CMM ">CMM  - Cellular &amp; Molecular Medicine </option><option value="CENG">CENG - Chemical Engineering          </option><option value="CHEM">CHEM - Chemistry and Biochemistry    </option><option value="CLX ">CLX  - Chicanx and Latinx Studies    </option><option value="CHIN">CHIN - Chinese Studies               </option><option value="CLAS">CLAS - Classical Studies             </option><option value="CCS ">CCS  - Climate Change Studies        </option><option value="CLIN">CLIN - Clinical Psychology           </option><option value="CLRE">CLRE - Clinical Research             </option><option value="COGS">COGS - Cognitive Science             </option><option value="COMM">COMM - Communication                 </option><option value="COGR">COGR - Communication/Graduate        </option><option value="CSS ">CSS  - Computational Social Science  </option><option value="CSE ">CSE  - Computer Science &amp; Engineering</option><option value="CCE ">CCE  - Critical Community Engagement </option><option value="CGS ">CGS  - Critical Gender Studies       </option><option value="CAT ">CAT  - Culture, Art, &amp; Technology    </option><option value="TDDM">TDDM - Dance/Dance Making            </option><option value="TDMV">TDMV - Dance/Movement                </option><option value="TDPF">TDPF - Dance/Performance             </option><option value="TDTR">TDTR - Dance/Theory                  </option><option value="DSC ">DSC  - Data Science                  </option><option value="DSE ">DSE  - Data Science and Engineering  </option><option value="DERM">DERM - Dermatology                   </option><option value="DSGN">DSGN - Design                        </option><option value="DOC ">DOC  - Dimensions of Culture         </option><option value="DDPM">DDPM - Drug Development &amp; Product Mgt</option><option value="ECON">ECON - Economics                     </option><option value="EDS ">EDS  - Education Studies             </option><option value="ERC ">ERC  - Eleanor Roosevelt College     </option><option value="ECE ">ECE  - Electrical &amp; Computer Engineer</option><option value="EMED">EMED - Emergency Medicine            </option><option value="ENG ">ENG  - Engineering                   </option><option value="ENVR">ENVR - Environmental Studies         </option><option value="ESYS">ESYS - Environmental Systems         </option><option value="ETIM">ETIM - Ethnic St/Interdis Res Methods</option><option value="ETHN">ETHN - Ethnic Studies                </option><option value="EXPR">EXPR - Exchange Programs             </option><option value="FMPH">FMPH - Family Med &amp; Public Health    </option><option value="FPM ">FPM  - Family and Preventive Medicine</option><option value="FILM">FILM - Film Studies                  </option><option value="GPCO">GPCO - GPS/Core                      </option><option value="GPEC">GPEC - GPS/Economics                 </option><option value="GPGN">GPGN - GPS/General                   </option><option value="GPIM">GPIM - GPS/International Management  </option><option value="GPLA">GPLA - GPS/Language                  </option><option value="GPPA">GPPA - GPS/Policy Analytics          </option><option value="GPPS">GPPS - GPS/Political Science         </option><option value="GLBH">GLBH - Global Health                 </option><option value="GSS ">GSS  - Global South Studies          </option><option value="HITO">HITO - History Topics                </option><option value="HIEA">HIEA - History of East Asia          </option><option value="HIEU">HIEU - History of Europe             </option><option value="HILA">HILA - History of Latin America      </option><option value="HISC">HISC - History of Science            </option><option value="HISA">HISA - History of South Asia         </option><option value="HINE">HINE - History of the Near East      </option><option value="HIUS">HIUS - History of the United States  </option><option value="HIGR">HIGR - History, Graduate             </option><option value="HILD">HILD - History, Lower Division       </option><option value="HDS ">HDS  - Human Developmental Sciences  </option><option value="HUM ">HUM  - Humanities                    </option><option value="INTL">INTL - International Studies         </option><option value="JAPN">JAPN - Japanese Studies              </option><option value="JWSP">JWSP - Jewish Studies Program        </option><option value="LATI">LATI - Latin American Studies        </option><option value="LISL">LISL - Linguistics/Amer Sign Language</option><option value="LIAB">LIAB - Linguistics/Arabic            </option><option value="LIFR">LIFR - Linguistics/French            </option><option value="LIGN">LIGN - Linguistics/General           </option><option value="LIGM">LIGM - Linguistics/German            </option><option value="LIHL">LIHL - Linguistics/Heritage Languages</option><option value="LIIT">LIIT - Linguistics/Italian           </option><option value="LIPO">LIPO - Linguistics/Portuguese        </option><option value="LISP">LISP - Linguistics/Spanish           </option><option value="LTAM">LTAM - Literature of the Americas    </option><option value="LTAF">LTAF - Literature/African            </option><option value="LTCH">LTCH - Literature/Chinese            </option><option value="LTCO">LTCO - Literature/Comparative        </option><option value="LTCS">LTCS - Literature/Cultural Studies   </option><option value="LTEU">LTEU - Literature/European &amp; Eurasian</option><option value="LTFR">LTFR - Literature/French             </option><option value="LTGM">LTGM - Literature/German             </option><option value="LTGK">LTGK - Literature/Greek              </option><option value="LTIT">LTIT - Literature/Italian            </option><option value="LTKO">LTKO - Literature/Korean             </option><option value="LTLA">LTLA - Literature/Latin              </option><option value="LTRU">LTRU - Literature/Russian            </option><option value="LTSP">LTSP - Literature/Spanish            </option><option value="LTTH">LTTH - Literature/Theory             </option><option value="LTWR">LTWR - Literature/Writing            </option><option value="LTEN">LTEN - Literatures in English        </option><option value="LTWL">LTWL - Literatures of the World      </option><option value="LTEA">LTEA - Literatures/East Asian        </option><option value="MMW ">MMW  - Making of the Modern World    </option><option value="MBC ">MBC  - MarineBiodiversity&amp;Conservatn </option><option value="MATS">MATS - Materials Sci &amp; Engineering   </option><option value="MATH">MATH - Mathematics                   </option><option value="MSED">MSED - Mathematics &amp; Science Educ    </option><option value="MAE ">MAE  - Mechanical &amp; Aerospace Engin  </option><option value="MED ">MED  - Medicine                      </option><option value="MCWP">MCWP - Muir College Writing Program  </option><option value="MUS ">MUS  - Music                         </option><option value="NANO">NANO - NanoEngineering               </option><option value="NEU ">NEU  - Neurosciences                 </option><option value="NEUG">NEUG - Neurosciences/Graduate        </option><option value="OBG ">OBG  - Obstetrics and Gynecology     </option><option value="OPTH">OPTH - Ophthalmology                 </option><option value="ORTH">ORTH - Orthopaedics                  </option><option value="PATH">PATH - Pathology                     </option><option value="PEDS">PEDS - Pediatrics                    </option><option value="PHAR">PHAR - Pharmacology                  </option><option value="SPPS">SPPS - Pharmacy                      </option><option value="PHIL">PHIL - Philosophy                    </option><option value="PAE ">PAE  - Physician Assistant Education </option><option value="PHYS">PHYS - Physics                       </option><option value="POLI">POLI - Political Science             </option><option value="PSY ">PSY  - Psychiatry                    </option><option value="PSYC">PSYC - Psychology                    </option><option value="PH  ">PH   - Public Health                 </option><option value="PHB ">PHB  - Public Health/Biostatistics   </option><option value="RMAS">RMAS - Radiation Med &amp; Applied Sci   </option><option value="RAD ">RAD  - Radiology                     </option><option value="MGTF">MGTF - Rady Sch of Management Finance</option><option value="MGT ">MGT  - Rady School of Management     </option><option value="MGTA">MGTA - RadySchMgt Business Analytics </option><option value="MGTP">MGTP - RadySchMgt Profsnl Accountancy</option><option value="RMED">RMED - Reproductive Medicine         </option><option value="REV ">REV  - Revelle College               </option><option value="SOMI">SOMI - Sch of Med Interdisciplinary  </option><option value="SOMC">SOMC - School of Medicine Core Crses </option><option value="SIOC">SIOC - Scripps Inst of Oceanogr/COAP </option><option value="SIOG">SIOG - Scripps Inst of Oceanogr/GEO  </option><option value="SIOB">SIOB - Scripps Inst of Oceanogr/OBP  </option><option value="SIO ">SIO  - Scripps Inst of Oceanography  </option><option value="SOCG">SOCG - Soc/Graduate                  </option><option value="SOCE">SOCE - Soc/Ind Research &amp; Honors Prog</option><option value="SOCI">SOCI - Sociology                     </option><option value="SE  ">SE   - Structural Engineering        </option><option value="SURG">SURG - Surgery                       </option><option value="SYN ">SYN  - Synthesis                     </option><option value="TDAC">TDAC - Theatre / Acting              </option><option value="TDDE">TDDE - Theatre / Design              </option><option value="TDDR">TDDR - Theatre / Directing&amp;Stage Mgmt</option><option value="TDGE">TDGE - Theatre / General             </option><option value="TDGR">TDGR - Theatre / Graduate            </option><option value="TDHT">TDHT - Theatre / History &amp; Theory    </option><option value="TDPW">TDPW - Theatre / Playwriting         </option><option value="TDPR">TDPR - Theatre Dance/Practicum       </option><option value="USP ">USP  - Urban Studies &amp; Planning      </option><option value="UROL">UROL - Urology                       </option><option value="VIS ">VIS  - Visual Arts                   </option><option value="WARR">WARR - Warren College                </option><option value="WCWP">WCWP - Warren College Writing Program</option><option value="WES ">WES  - Wireless Embedded Systems     </option></select><input type="hidden" name="_selectedSubjects" value="1"><br>
+					
+				</td>
+			
+				<td>
+					
+
+	<table id="mtab">
+		<tbody>
+			<tr>
+				<td colspan="4">
+					<span class="bold_text">only show me courses which match any of the<br>following criteria</span> 
+				</td>
+			</tr>		
+			<tr><td colspan="4"></td></tr>
+			<tr>
+				<td>lower division:</td>
+				<td><input id="schedOption11" name="schedOption1" checked="true" type="checkbox" value="true"><input type="hidden" name="_schedOption1" value="on">1-99</td>
+				<td><input id="schedOption111" name="schedOption11" type="checkbox" value="true"><input type="hidden" name="_schedOption11" value="on">87&amp;90s</td>
+				<td><input id="schedOption121" name="schedOption12" type="checkbox" value="true"><input type="hidden" name="_schedOption12" value="on">99s</td>
+			</tr>
+			<tr>
+				<td>upper division:</td>
+				<td><input id="schedOption21" name="schedOption2" checked="true" type="checkbox" value="true"><input type="hidden" name="_schedOption2" value="on">100-198</td>
+				<td><input id="schedOption41" name="schedOption4" type="checkbox" value="true"><input type="hidden" name="_schedOption4" value="on">195s</td>
+				<td><input id="schedOption51" name="schedOption5" type="checkbox" value="true"><input type="hidden" name="_schedOption5" value="on">199s</td>
+			</tr>
+			<tr>
+				<td>graduate:</td>
+				<td><input id="schedOption31" name="schedOption3" type="checkbox" value="true"><input type="hidden" name="_schedOption3" value="on">200-297</td>
+				<td><input id="schedOption71" name="schedOption7" type="checkbox" value="true"><input type="hidden" name="_schedOption7" value="on">298s</td>
+				<td><input id="schedOption81" name="schedOption8" type="checkbox" value="true"><input type="hidden" name="_schedOption8" value="on">299s</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input id="schedOption131" name="schedOption13" type="checkbox" value="true"><input type="hidden" name="_schedOption13" value="on">300+</td>
+				<td><input id="schedOption101" name="schedOption10" type="checkbox" value="true"><input type="hidden" name="_schedOption10" value="on">400+</td>
+				<td><input id="schedOption91" name="schedOption9" type="checkbox" value="true"><input type="hidden" name="_schedOption9" value="on">500+</td>
+			</tr>
+		</tbody>
+	</table>
+			
+	<br>		
+	<table id="mtab" style="border: 1px solid #cccccc; background-color: #fafafa;">
+		<tbody>
+			<tr>
+				<td colspan="4">
+					<span class="itatxt">
+						<span class="bold_text">(optional)</span> the course meets primarily on 
+					</span>	
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<table id="mtab">
+						<tbody><tr>
+							<td><input id="schDay1" name="schDay" checked="true" type="checkbox" value="M"><input type="hidden" name="_schDay" value="on">Mon</td>
+							<td><input id="schDay2" name="schDay" checked="true" type="checkbox" value="T"><input type="hidden" name="_schDay" value="on">Tue</td>
+							<td><input id="schDay3" name="schDay" checked="true" type="checkbox" value="W"><input type="hidden" name="_schDay" value="on">Wed</td>
+							<td><input id="schDay4" name="schDay" checked="true" type="checkbox" value="R"><input type="hidden" name="_schDay" value="on">Thurs</td>
+							<td><input id="schDay5" name="schDay" checked="true" type="checkbox" value="F"><input type="hidden" name="_schDay" value="on">Fri</td>
+							<td><input id="schDay6" name="schDay" checked="true" type="checkbox" value="S"><input type="hidden" name="_schDay" value="on">Sat</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td>Start&nbsp;Time
+					<select id="schStartTime" name="schStartTime">
+									
+							
+								<option value="12:00">
+									12:00
+								</option>
+							
+								<option value="12:15">
+									12:15
+								</option>
+							
+								<option value="12:30">
+									12:30
+								</option>
+							
+								<option value="12:45">
+									12:45
+								</option>
+							
+								<option value="1:00">
+									1:00
+								</option>
+							
+								<option value="1:15">
+									1:15
+								</option>
+							
+								<option value="1:30">
+									1:30
+								</option>
+							
+								<option value="1:45">
+									1:45
+								</option>
+							
+								<option value="2:00">
+									2:00
+								</option>
+							
+								<option value="2:15">
+									2:15
+								</option>
+							
+								<option value="2:30">
+									2:30
+								</option>
+							
+								<option value="2:45">
+									2:45
+								</option>
+							
+								<option value="3:00">
+									3:00
+								</option>
+							
+								<option value="3:15">
+									3:15
+								</option>
+							
+								<option value="3:30">
+									3:30
+								</option>
+							
+								<option value="3:45">
+									3:45
+								</option>
+							
+								<option value="4:00">
+									4:00
+								</option>
+							
+								<option value="4:15">
+									4:15
+								</option>
+							
+								<option value="4:30">
+									4:30
+								</option>
+							
+								<option value="4:45">
+									4:45
+								</option>
+							
+								<option value="5:00">
+									5:00
+								</option>
+							
+								<option value="5:15">
+									5:15
+								</option>
+							
+								<option value="5:30">
+									5:30
+								</option>
+							
+								<option value="5:45">
+									5:45
+								</option>
+							
+								<option value="6:00">
+									6:00
+								</option>
+							
+								<option value="6:15">
+									6:15
+								</option>
+							
+								<option value="6:30">
+									6:30
+								</option>
+							
+								<option value="6:45">
+									6:45
+								</option>
+							
+								<option value="7:00">
+									7:00
+								</option>
+							
+								<option value="7:15">
+									7:15
+								</option>
+							
+								<option value="7:30">
+									7:30
+								</option>
+							
+								<option value="7:45">
+									7:45
+								</option>
+							
+								<option value="8:00">
+									8:00
+								</option>
+							
+								<option value="8:15">
+									8:15
+								</option>
+							
+								<option value="8:30">
+									8:30
+								</option>
+							
+								<option value="8:45">
+									8:45
+								</option>
+							
+								<option value="9:00">
+									9:00
+								</option>
+							
+								<option value="9:15">
+									9:15
+								</option>
+							
+								<option value="9:30">
+									9:30
+								</option>
+							
+								<option value="9:45">
+									9:45
+								</option>
+							
+								<option value="10:00">
+									10:00
+								</option>
+							
+								<option value="10:15">
+									10:15
+								</option>
+							
+								<option value="10:30">
+									10:30
+								</option>
+							
+								<option value="10:45">
+									10:45
+								</option>
+							
+								<option value="11:00">
+									11:00
+								</option>
+							
+								<option value="11:15">
+									11:15
+								</option>
+							
+								<option value="11:30">
+									11:30
+								</option>
+							
+								<option value="11:45">
+									11:45
+								</option>
+							
+						
+					</select>
+					<select id="schStartAmPm" name="schStartAmPm">
+						<option value="0">AM</option>
+						<option value="1">PM</option>
+					</select>
+				</td>
+				<td></td>
+				<td></td>
+				<td>
+				 End&nbsp;Time:
+				 	<select id="schEndTime" name="schEndTime">
+									
+							
+								<option value="12:00">
+									12:00
+								</option>
+							
+								<option value="12:15">
+									12:15
+								</option>
+							
+								<option value="12:30">
+									12:30
+								</option>
+							
+								<option value="12:45">
+									12:45
+								</option>
+							
+								<option value="1:00">
+									1:00
+								</option>
+							
+								<option value="1:15">
+									1:15
+								</option>
+							
+								<option value="1:30">
+									1:30
+								</option>
+							
+								<option value="1:45">
+									1:45
+								</option>
+							
+								<option value="2:00">
+									2:00
+								</option>
+							
+								<option value="2:15">
+									2:15
+								</option>
+							
+								<option value="2:30">
+									2:30
+								</option>
+							
+								<option value="2:45">
+									2:45
+								</option>
+							
+								<option value="3:00">
+									3:00
+								</option>
+							
+								<option value="3:15">
+									3:15
+								</option>
+							
+								<option value="3:30">
+									3:30
+								</option>
+							
+								<option value="3:45">
+									3:45
+								</option>
+							
+								<option value="4:00">
+									4:00
+								</option>
+							
+								<option value="4:15">
+									4:15
+								</option>
+							
+								<option value="4:30">
+									4:30
+								</option>
+							
+								<option value="4:45">
+									4:45
+								</option>
+							
+								<option value="5:00">
+									5:00
+								</option>
+							
+								<option value="5:15">
+									5:15
+								</option>
+							
+								<option value="5:30">
+									5:30
+								</option>
+							
+								<option value="5:45">
+									5:45
+								</option>
+							
+								<option value="6:00">
+									6:00
+								</option>
+							
+								<option value="6:15">
+									6:15
+								</option>
+							
+								<option value="6:30">
+									6:30
+								</option>
+							
+								<option value="6:45">
+									6:45
+								</option>
+							
+								<option value="7:00">
+									7:00
+								</option>
+							
+								<option value="7:15">
+									7:15
+								</option>
+							
+								<option value="7:30">
+									7:30
+								</option>
+							
+								<option value="7:45">
+									7:45
+								</option>
+							
+								<option value="8:00">
+									8:00
+								</option>
+							
+								<option value="8:15">
+									8:15
+								</option>
+							
+								<option value="8:30">
+									8:30
+								</option>
+							
+								<option value="8:45">
+									8:45
+								</option>
+							
+								<option value="9:00">
+									9:00
+								</option>
+							
+								<option value="9:15">
+									9:15
+								</option>
+							
+								<option value="9:30">
+									9:30
+								</option>
+							
+								<option value="9:45">
+									9:45
+								</option>
+							
+								<option value="10:00">
+									10:00
+								</option>
+							
+								<option value="10:15">
+									10:15
+								</option>
+							
+								<option value="10:30">
+									10:30
+								</option>
+							
+								<option value="10:45">
+									10:45
+								</option>
+							
+								<option value="11:00">
+									11:00
+								</option>
+							
+								<option value="11:15">
+									11:15
+								</option>
+							
+								<option value="11:30">
+									11:30
+								</option>
+							
+								<option value="11:45">
+									11:45
+								</option>
+							
+						
+					</select>
+					<select id="schEndAmPm" name="schEndAmPm">
+						<option value="0">AM</option>
+						<option value="1">PM</option>
+					</select>
+				 </td>
+			</tr>
+		</tbody>
+	</table>
+
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+
+					<div id="tabs-dept" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+						
+
+<div>
+	<table>
+	 	<tbody>
+	 		<tr>
+	 			<td width="40%">
+	 				<span class="itatxt">
+						if you select the list you may use your keyboard to jump to a department name<br>
+					</span>
+					<span class="bold_text">select one or more departments <br></span>
+			    	<select id="selectedDepartments" name="selectedDepartments" multiple="multiple" size="19">
+			    		
+					<option value="AIP ">Academic Internship Program        </option><option value="AAS ">African American Studies           </option><option value="AWP ">Analytical Writing Program         </option><option value="ANES">Anesthesiology                     </option><option value="ANTH">Anthropology                       </option><option value="AAPI">Asian American &amp;Pacific Islander   </option><option value="ASTR">Astronomy and Astrophysics         </option><option value="BENG">Bioengineering                     </option><option value="BIOL">Biology                            </option><option value="BIOM">Biomedical Sciences                </option><option value="CMM ">Cellular &amp; Molecular Medicine      </option><option value="CHEM">Chemistry and Biochemistry         </option><option value="CLX ">Chicanx and Latinx Studies         </option><option value="CHIN">Chinese Studies Program            </option><option value="CLAS">Classical Studies Program          </option><option value="CCS ">Climate Change Studies             </option><option value="CLPH">Clinical Pharmacy                  </option><option value="CLIN">Clinical Psychology Program        </option><option value="CLRE">Clinical Research Program          </option><option value="COGS">Cognitive Science                  </option><option value="COMM">Communication                      </option><option value="CSS ">Computational Social Science       </option><option value="CSE ">Computer Science &amp; Engineering     </option><option value="CCE ">Critical Community Engagement      </option><option value="CGS ">Critical Gender Studies Program    </option><option value="CAT ">Culture, Art &amp; Technology Program  </option><option value="DSC ">Data Science                       </option><option value="DERM">Dermatology                        </option><option value="DOC ">Dimensions of Culture Program      </option><option value="DDPM">Drug Development &amp; Product Mgt     </option><option value="ECON">Economics                          </option><option value="EDS ">Education Studies                  </option><option value="ERC ">Eleanor Roosevelt College          </option><option value="ECE ">Electrical &amp; Computer Engineering  </option><option value="EMED">Emergency Medicine                 </option><option value="ENVR">Environmental Studies Program      </option><option value="ESYS">Environmental Systems Program      </option><option value="ETHN">Ethnic Studies                     </option><option value="FMPH">Family Medicine &amp; Public Health    </option><option value="FPM ">Family and Preventive Medicine     </option><option value="FILM">Film Studies Program               </option><option value="GLBH">Global Health Program              </option><option value="GPS ">Global Policy &amp; Strategy           </option><option value="GSS ">Global South Studies               </option><option value="HIST">History                            </option><option value="SPH ">HrbWrth Sch of PblHlth&amp; HmnLngvtySc</option><option value="HDS ">Human Developmental Sciences       </option><option value="HUM ">Humanities Program                 </option><option value="INTL">International Studies Program      </option><option value="JAPN">Japanese Studies Program           </option><option value="JWSP">Jewish Studies Program             </option><option value="LATI">Latin American Studies Program     </option><option value="LING">Linguistics                        </option><option value="LIT ">Literature                         </option><option value="MMW ">Making of the Modern World         </option><option value="MBC ">Marine Biodiversity &amp; Conservation </option><option value="MATS">Materials Sci &amp; Engineering Program</option><option value="MSED">Math &amp; Science Educ Jt Doc Program </option><option value="MATH">Mathematics                        </option><option value="MAE ">Mechanical &amp; Aerospace Engineering </option><option value="MED ">Medicine                           </option><option value="MCWP">Muir College Writing Program       </option><option value="MUS ">Music                              </option><option value="NENG">NanoEngineering                    </option><option value="NEU ">Neurosciences                      </option><option value="OBG ">Obstetrics and Gynecology          </option><option value="OPTH">Ophthalmology                      </option><option value="ORTH">Orthopaedics                       </option><option value="PAEP">PA Education Program               </option><option value="PATH">Pathology                          </option><option value="PEDS">Pediatrics                         </option><option value="PHAR">Pharmacology                       </option><option value="PHIL">Philosophy                         </option><option value="PHYS">Physics                            </option><option value="POLI">Political Science                  </option><option value="PSY ">Psychiatry                         </option><option value="PSYC">Psychology                         </option><option value="RMAS">Radiation Medicine and Applied Sci </option><option value="RAD ">Radiology                          </option><option value="RSM ">Rady School of Management          </option><option value="RMED">Reproductive Medicine              </option><option value="REV ">Revelle College                    </option><option value="SOMI">Sch of Med Interdisciplinary Crses </option><option value="SOE ">School of Engineering              </option><option value="SOMC">School of Medicine                 </option><option value="SIO ">Scripps Institution of Oceanography</option><option value="SOC ">Sociology                          </option><option value="SE  ">Structural Engineering             </option><option value="SURG">Surgery                            </option><option value="SYN ">Synthesis Program                  </option><option value="THEA">Theatre and Dance                  </option><option value="UNAF">Unaffiliated                       </option><option value="USP ">Urban Studies &amp; Planning Prog      </option><option value="UROL">Urology                            </option><option value="VIS ">Visual Arts                        </option><option value="WARR">Warren College                     </option><option value="WCWP">Warren College Writing Program     </option><option value="WES ">Wireless Embedded Systems          </option></select><input type="hidden" name="_selectedDepartments" value="1"><br>
+					
+    			</td>
+    		
+    			<td>
+    				
+
+	<table id="mtab">
+		<tbody>
+			<tr>
+				<td colspan="4">
+					<span class="bold_text">only show me courses which match any of the<br> following criteria</span> 
+				</td>
+			</tr>		
+			<tr><td colspan="4"></td></tr>
+			<tr>
+				<td>lower division:</td>
+				<td><input id="schedOption1Dept1" name="schedOption1Dept" checked="true" type="checkbox" value="true"><input type="hidden" name="_schedOption1Dept" value="on">1-99</td>
+				<td><input id="schedOption11Dept1" name="schedOption11Dept" type="checkbox" value="true"><input type="hidden" name="_schedOption11Dept" value="on">87&amp;90s</td>
+				<td><input id="schedOption12Dept1" name="schedOption12Dept" type="checkbox" value="true"><input type="hidden" name="_schedOption12Dept" value="on">99s</td>
+			</tr>
+			<tr>
+				<td>upper division:</td>
+				<td><input id="schedOption2Dept1" name="schedOption2Dept" checked="true" type="checkbox" value="true"><input type="hidden" name="_schedOption2Dept" value="on">100-198</td>
+				<td><input id="schedOption4Dept1" name="schedOption4Dept" type="checkbox" value="true"><input type="hidden" name="_schedOption4Dept" value="on">195s</td>
+				<td><input id="schedOption5Dept1" name="schedOption5Dept" type="checkbox" value="true"><input type="hidden" name="_schedOption5Dept" value="on">199s</td>
+			</tr>
+			<tr>
+				<td>graduate:</td>
+				<td><input id="schedOption3Dept1" name="schedOption3Dept" type="checkbox" value="true"><input type="hidden" name="_schedOption3Dept" value="on">200-297</td>
+				<td><input id="schedOption7Dept1" name="schedOption7Dept" type="checkbox" value="true"><input type="hidden" name="_schedOption7Dept" value="on">298s</td>
+				<td><input id="schedOption8Dept1" name="schedOption8Dept" type="checkbox" value="true"><input type="hidden" name="_schedOption8Dept" value="on">299s</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input id="schedOption13Dept1" name="schedOption13Dept" type="checkbox" value="true"><input type="hidden" name="_schedOption13Dept" value="on">300+</td>
+				<td><input id="schedOption10Dept1" name="schedOption10Dept" type="checkbox" value="true"><input type="hidden" name="_schedOption10Dept" value="on">400+</td>
+				<td><input id="schedOption9Dept1" name="schedOption9Dept" type="checkbox" value="true"><input type="hidden" name="_schedOption9Dept" value="on">500+</td>
+			</tr>
+		</tbody>
+	</table>
+			
+	<br>		
+	<table id="mtab" style="border: 1px solid #cccccc; background-color: #fafafa;">
+		<tbody>
+			<tr>
+				<td colspan="4">
+					<span class="itatxt">
+						<span class="bold_text">(optional)</span> the course meets primarily on 
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<table id="mtab">
+						<tbody><tr>
+							<td><input id="schDayDept1" name="schDayDept" checked="true" type="checkbox" value="M"><input type="hidden" name="_schDayDept" value="on">Mon</td>
+							<td><input id="schDayDept2" name="schDayDept" checked="true" type="checkbox" value="T"><input type="hidden" name="_schDayDept" value="on">Tue</td>
+							<td><input id="schDayDept3" name="schDayDept" checked="true" type="checkbox" value="W"><input type="hidden" name="_schDayDept" value="on">Wed</td>
+							<td><input id="schDayDept4" name="schDayDept" checked="true" type="checkbox" value="R"><input type="hidden" name="_schDayDept" value="on">Thurs</td>
+							<td><input id="schDayDept5" name="schDayDept" checked="true" type="checkbox" value="F"><input type="hidden" name="_schDayDept" value="on">Fri</td>
+							<td><input id="schDayDept6" name="schDayDept" checked="true" type="checkbox" value="S"><input type="hidden" name="_schDayDept" value="on">Sat</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td>Start&nbsp;Time
+					<select id="schStartTimeDept" name="schStartTimeDept">
+									
+							
+								<option value="12:00">
+									12:00
+								</option>
+							
+								<option value="12:15">
+									12:15
+								</option>
+							
+								<option value="12:30">
+									12:30
+								</option>
+							
+								<option value="12:45">
+									12:45
+								</option>
+							
+								<option value="1:00">
+									1:00
+								</option>
+							
+								<option value="1:15">
+									1:15
+								</option>
+							
+								<option value="1:30">
+									1:30
+								</option>
+							
+								<option value="1:45">
+									1:45
+								</option>
+							
+								<option value="2:00">
+									2:00
+								</option>
+							
+								<option value="2:15">
+									2:15
+								</option>
+							
+								<option value="2:30">
+									2:30
+								</option>
+							
+								<option value="2:45">
+									2:45
+								</option>
+							
+								<option value="3:00">
+									3:00
+								</option>
+							
+								<option value="3:15">
+									3:15
+								</option>
+							
+								<option value="3:30">
+									3:30
+								</option>
+							
+								<option value="3:45">
+									3:45
+								</option>
+							
+								<option value="4:00">
+									4:00
+								</option>
+							
+								<option value="4:15">
+									4:15
+								</option>
+							
+								<option value="4:30">
+									4:30
+								</option>
+							
+								<option value="4:45">
+									4:45
+								</option>
+							
+								<option value="5:00">
+									5:00
+								</option>
+							
+								<option value="5:15">
+									5:15
+								</option>
+							
+								<option value="5:30">
+									5:30
+								</option>
+							
+								<option value="5:45">
+									5:45
+								</option>
+							
+								<option value="6:00">
+									6:00
+								</option>
+							
+								<option value="6:15">
+									6:15
+								</option>
+							
+								<option value="6:30">
+									6:30
+								</option>
+							
+								<option value="6:45">
+									6:45
+								</option>
+							
+								<option value="7:00">
+									7:00
+								</option>
+							
+								<option value="7:15">
+									7:15
+								</option>
+							
+								<option value="7:30">
+									7:30
+								</option>
+							
+								<option value="7:45">
+									7:45
+								</option>
+							
+								<option value="8:00">
+									8:00
+								</option>
+							
+								<option value="8:15">
+									8:15
+								</option>
+							
+								<option value="8:30">
+									8:30
+								</option>
+							
+								<option value="8:45">
+									8:45
+								</option>
+							
+								<option value="9:00">
+									9:00
+								</option>
+							
+								<option value="9:15">
+									9:15
+								</option>
+							
+								<option value="9:30">
+									9:30
+								</option>
+							
+								<option value="9:45">
+									9:45
+								</option>
+							
+								<option value="10:00">
+									10:00
+								</option>
+							
+								<option value="10:15">
+									10:15
+								</option>
+							
+								<option value="10:30">
+									10:30
+								</option>
+							
+								<option value="10:45">
+									10:45
+								</option>
+							
+								<option value="11:00">
+									11:00
+								</option>
+							
+								<option value="11:15">
+									11:15
+								</option>
+							
+								<option value="11:30">
+									11:30
+								</option>
+							
+								<option value="11:45">
+									11:45
+								</option>
+							
+						
+					</select>
+					<select id="schStartAmPmDept" name="schStartAmPmDept">
+						<option value="0">AM</option>
+						<option value="1">PM</option>
+					</select>
+				</td>
+				<td></td>
+				<td></td>
+				<td>
+				 End&nbsp;Time:
+				 	<select id="schEndTimeDept" name="schEndTimeDept">
+									
+							
+								<option value="12:00">
+									12:00
+								</option>
+							
+								<option value="12:15">
+									12:15
+								</option>
+							
+								<option value="12:30">
+									12:30
+								</option>
+							
+								<option value="12:45">
+									12:45
+								</option>
+							
+								<option value="1:00">
+									1:00
+								</option>
+							
+								<option value="1:15">
+									1:15
+								</option>
+							
+								<option value="1:30">
+									1:30
+								</option>
+							
+								<option value="1:45">
+									1:45
+								</option>
+							
+								<option value="2:00">
+									2:00
+								</option>
+							
+								<option value="2:15">
+									2:15
+								</option>
+							
+								<option value="2:30">
+									2:30
+								</option>
+							
+								<option value="2:45">
+									2:45
+								</option>
+							
+								<option value="3:00">
+									3:00
+								</option>
+							
+								<option value="3:15">
+									3:15
+								</option>
+							
+								<option value="3:30">
+									3:30
+								</option>
+							
+								<option value="3:45">
+									3:45
+								</option>
+							
+								<option value="4:00">
+									4:00
+								</option>
+							
+								<option value="4:15">
+									4:15
+								</option>
+							
+								<option value="4:30">
+									4:30
+								</option>
+							
+								<option value="4:45">
+									4:45
+								</option>
+							
+								<option value="5:00">
+									5:00
+								</option>
+							
+								<option value="5:15">
+									5:15
+								</option>
+							
+								<option value="5:30">
+									5:30
+								</option>
+							
+								<option value="5:45">
+									5:45
+								</option>
+							
+								<option value="6:00">
+									6:00
+								</option>
+							
+								<option value="6:15">
+									6:15
+								</option>
+							
+								<option value="6:30">
+									6:30
+								</option>
+							
+								<option value="6:45">
+									6:45
+								</option>
+							
+								<option value="7:00">
+									7:00
+								</option>
+							
+								<option value="7:15">
+									7:15
+								</option>
+							
+								<option value="7:30">
+									7:30
+								</option>
+							
+								<option value="7:45">
+									7:45
+								</option>
+							
+								<option value="8:00">
+									8:00
+								</option>
+							
+								<option value="8:15">
+									8:15
+								</option>
+							
+								<option value="8:30">
+									8:30
+								</option>
+							
+								<option value="8:45">
+									8:45
+								</option>
+							
+								<option value="9:00">
+									9:00
+								</option>
+							
+								<option value="9:15">
+									9:15
+								</option>
+							
+								<option value="9:30">
+									9:30
+								</option>
+							
+								<option value="9:45">
+									9:45
+								</option>
+							
+								<option value="10:00">
+									10:00
+								</option>
+							
+								<option value="10:15">
+									10:15
+								</option>
+							
+								<option value="10:30">
+									10:30
+								</option>
+							
+								<option value="10:45">
+									10:45
+								</option>
+							
+								<option value="11:00">
+									11:00
+								</option>
+							
+								<option value="11:15">
+									11:15
+								</option>
+							
+								<option value="11:30">
+									11:30
+								</option>
+							
+								<option value="11:45">
+									11:45
+								</option>
+							
+						
+					</select>
+					<select id="schEndAmPmDept" name="schEndAmPmDept">
+						<option value="0">AM</option>
+						<option value="1">PM</option>
+					</select>
+				 </td>
+			</tr>
+		</tbody>
+	</table>
+
+    			</td>
+    		</tr>
+    	</tbody>
+    </table>
+</div>
+					</div>
+
+					<div id="tabs-crs" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+						<div>
+	<table id="mtab">
+    		<tbody>
+    			<tr>
+    				<td>multiple<br>courses</td>
+    				<td>
+    				<textarea id="courses" name="courses" style="width: 200px;" rows="13" cols="100"></textarea>
+    				<label for="courses"></label><br>
+    				</td>
+    				<td> <span class="bold_text">Multiple Courses Search Tips</span>
+    					<ul>
+    						<li>Search for a range: MATH 10-20, LISP 1-3</li>
+    						<li>Search for a range including letters: POLI 100A-DA</li>
+    						<li>Search for an individual course (separated by commas,<br> spaces or returns): POLI 27, DOC 1, MUS 15</li>
+    						<li>Search for your entire schedule: WCWP 10A-10B, POLI 27,<br> MAE 100-198, MATH 20A-F, POLI 100DA, PHYS 2A-2CL</li>
+    						<li><span class="bold_text">Remember:</span> Specifying the subject code once without a<br> range <span class="bold_text">will not&nbsp;</span>work: CSE 10, 13, 14, 19, 27</li>
+    						
+    					</ul>
+    				 </td>
+    			</tr>
+    		</tbody>
+    	</table>
+				   
+</div>
+					</div>
+
+					<div id="tabs-sec" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+						<div>
+    	<table id="mtab">
+    		<tbody>
+    			<tr>
+    				<td>multiple<br>section ids</td>
+    				<td>				    				
+    				<textarea id="sections" name="sections" style="width: 200px;" rows="13" cols="100"></textarea>
+    				<label for="sections"></label><br>
+    				</td>
+    				<td> <span class="bold_text">Section ID Search Tips</span>
+    					<ul>
+    						<li>Search by six-digit section IDs separated by anything!</li>
+    						<li>commas, spaces, returns, periods, smileys, your name </li>
+    						<li>Example:</li>
+    					</ul>
+    					123456 543210.987654,<br>
+						323475*565473Joe456321 
+    				</td>
+    			</tr>
+    		</tbody>
+    	</table>
+</div>
+					</div>
+
+					<div id="tabs-ins" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+						<div>
+	<table id="mtab">
+   		<tbody>
+   			<tr>
+			  <td colspan="4">
+			   <span style="font-size: 85%; font-weight: bold;">
+				queries by professor name or course title look at every course regardless of the department and subject.
+			   </span>
+			  </td>
+			 </tr>
+			 <tr>
+				  <td>
+				   &nbsp;
+				  </td>
+				  <td>
+				   &nbsp;
+				  </td>
+				  <td>
+				   &nbsp;
+				  </td>
+				  <td rowspan="5">
+				     <table border="0" width="100%">
+				      <tbody><tr>
+				       <td>
+							<span style="font-weight: bold;">Title or Professor Search Tips</span>
+				       </td>
+				      </tr>
+				      <tr>
+				       <td>
+							<li>Title search includes class subtitles</li>
+				       </td>
+				      </tr>
+				      <tr>
+				       <td>
+							<li>Professor search format: last name, first name</li>
+				       </td>
+				      </tr>
+				      <tr>
+				       <td>
+							<li>Use "begins with" for last names</li>
+							<li>Use "contains" for first names</li>
+				       </td>
+				      </tr>
+				     </tbody></table>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td>
+				   professor&nbsp;name
+				  </td>
+				  <td>
+				  <select id="instructorType" name="instructorType">
+				    <option value="begin" selected="">begins with</option>
+				    <option value="contain">contains</option>
+				    <option value="exact">is exactly</option>
+				   </select>
+				  </td>
+				  <td>
+				  <input id="instructor" name="instructor" type="text" value="" size="20">
+				  <label for="instructor"></label><br>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td>
+				   &nbsp;
+				  </td>
+				  <td>
+				   &nbsp;
+				  </td>
+				  <td>
+				   &nbsp;
+				  </td>
+			 </tr>
+			 <tr>
+				  <td>
+				   course title
+				  </td>
+				  <td>
+				   <select id="titleType" name="titleType">
+				    <option value="begin">begins with</option>
+				    <option value="contain" selected="">contains</option>
+				    <option value="exact">is exactly</option>
+				   </select>
+				  </td>
+				  <td>
+				  <input id="title" name="title" type="text" value="" size="20">
+				  </td>
+			 </tr>
+			 <tr>
+				  <td>
+				   &nbsp;
+				  </td>
+				  <td>
+				   &nbsp;
+				  </td>
+				  <td>
+				   	  <label for="title"></label>
+				  </td>
+			 </tr>
+
+   			
+   		</tbody>
+   	</table>
+</div>
+					</div>
+
+				</div>
+
+				<table width="100%">
+					<tbody><tr>
+						<td class="centeralign">
+							<fieldset>
+								<div class="field">
+									<input id="hideFullSec1" name="hideFullSec" type="checkbox" value="true"><input type="hidden" name="_hideFullSec" value="on">
+									only show sections with seats available <input id="socFacSubmit" type="button" onclick="submitForm(this.form, &#39;/scheduleOfClasses/scheduleOfClassesFacultyResult.htm&#39;)" value="Search" class="button primary">
+									<input id="showPopup" name="showPopup" type="checkbox" value="true"><input type="hidden" name="_showPopup" value="on">
+									show the results in a popup window
+								</div>
+							</fieldset>
+						</td>
+					</tr>
+					<tr>
+						<td class="centeralign">The schedule of classes, including
+							information contained within it, is subject to change.
+							Information is updated nightly.</td>
+					</tr>
+				</tbody></table>
+		</form>
+
+	</div>
+
+	</div>
+</div>
+<!-- footer -->
+<div id="tdr_footer">
+    <div id="tdr_footer_content">
+        <div>UC San Diego 9500 Gilman Dr. La Jolla, CA 92093 (858) 534-2230</div>
+        <div>
+            Copyright ©<span id="tdr_copyright_year">2015</span> Regents of the University of California. All rights reserved.
+        </div>
+        <ul id="tdr_footer_links">
+            <li><a href="http://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
+            <li id="tdr_footer_feedback" class="last"><a href="https://act.ucsd.edu/cwp/feedback/tool/apps" onclick="window.open(&#39;//act.ucsd.edu/cwp/feedback/help/tritonlink&#39;, &#39;DYGWYW&#39;, &#39;menubar=0,resizable=1,scrollbars=1,width=450,height=650&#39;);" target="DYGWYW">Feedback</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- shib timeout -->
+<img src="./Student_Class Info_files/imagebug" alt=" " style="display: none;">
+<!-- google analytic -->
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', "UA-24480055-22"]);
+  _gaq.push(['_setDomainName', "ucsd.edu"]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body></html>

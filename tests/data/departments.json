@@ -1,0 +1,394 @@
+[
+    {
+        "code": "AIP ",
+        "value": "Academic Internship Program        "
+    },
+    {
+        "code": "AAS ",
+        "value": "African American Studies           "
+    },
+    {
+        "code": "AWP ",
+        "value": "Analytical Writing Program         "
+    },
+    {
+        "code": "ANES",
+        "value": "Anesthesiology                     "
+    },
+    {
+        "code": "ANTH",
+        "value": "Anthropology                       "
+    },
+    {
+        "code": "AAPI",
+        "value": "Asian American &Pacific Islander   "
+    },
+    {
+        "code": "ASTR",
+        "value": "Astronomy and Astrophysics         "
+    },
+    {
+        "code": "BENG",
+        "value": "Bioengineering                     "
+    },
+    {
+        "code": "BIOL",
+        "value": "Biology                            "
+    },
+    {
+        "code": "BIOM",
+        "value": "Biomedical Sciences                "
+    },
+    {
+        "code": "CMM ",
+        "value": "Cellular & Molecular Medicine      "
+    },
+    {
+        "code": "CHEM",
+        "value": "Chemistry and Biochemistry         "
+    },
+    {
+        "code": "CLX ",
+        "value": "Chicanx and Latinx Studies         "
+    },
+    {
+        "code": "CHIN",
+        "value": "Chinese Studies Program            "
+    },
+    {
+        "code": "CLAS",
+        "value": "Classical Studies Program          "
+    },
+    {
+        "code": "CCS ",
+        "value": "Climate Change Studies             "
+    },
+    {
+        "code": "CLPH",
+        "value": "Clinical Pharmacy                  "
+    },
+    {
+        "code": "CLIN",
+        "value": "Clinical Psychology Program        "
+    },
+    {
+        "code": "CLRE",
+        "value": "Clinical Research Program          "
+    },
+    {
+        "code": "COGS",
+        "value": "Cognitive Science                  "
+    },
+    {
+        "code": "COMM",
+        "value": "Communication                      "
+    },
+    {
+        "code": "CSS ",
+        "value": "Computational Social Science       "
+    },
+    {
+        "code": "CSE ",
+        "value": "Computer Science & Engineering     "
+    },
+    {
+        "code": "CCE ",
+        "value": "Critical Community Engagement      "
+    },
+    {
+        "code": "CGS ",
+        "value": "Critical Gender Studies Program    "
+    },
+    {
+        "code": "CAT ",
+        "value": "Culture, Art & Technology Program  "
+    },
+    {
+        "code": "DSC ",
+        "value": "Data Science                       "
+    },
+    {
+        "code": "DERM",
+        "value": "Dermatology                        "
+    },
+    {
+        "code": "DOC ",
+        "value": "Dimensions of Culture Program      "
+    },
+    {
+        "code": "DDPM",
+        "value": "Drug Development & Product Mgt     "
+    },
+    {
+        "code": "ECON",
+        "value": "Economics                          "
+    },
+    {
+        "code": "EDS ",
+        "value": "Education Studies                  "
+    },
+    {
+        "code": "ERC ",
+        "value": "Eleanor Roosevelt College          "
+    },
+    {
+        "code": "ECE ",
+        "value": "Electrical & Computer Engineering  "
+    },
+    {
+        "code": "EMED",
+        "value": "Emergency Medicine                 "
+    },
+    {
+        "code": "ENVR",
+        "value": "Environmental Studies Program      "
+    },
+    {
+        "code": "ESYS",
+        "value": "Environmental Systems Program      "
+    },
+    {
+        "code": "ETHN",
+        "value": "Ethnic Studies                     "
+    },
+    {
+        "code": "FMPH",
+        "value": "Family Medicine & Public Health    "
+    },
+    {
+        "code": "FPM ",
+        "value": "Family and Preventive Medicine     "
+    },
+    {
+        "code": "FILM",
+        "value": "Film Studies Program               "
+    },
+    {
+        "code": "GLBH",
+        "value": "Global Health Program              "
+    },
+    {
+        "code": "GPS ",
+        "value": "Global Policy & Strategy           "
+    },
+    {
+        "code": "GSS ",
+        "value": "Global South Studies               "
+    },
+    {
+        "code": "HIST",
+        "value": "History                            "
+    },
+    {
+        "code": "SPH ",
+        "value": "HrbWrth Sch of PblHlth& HmnLngvtySc"
+    },
+    {
+        "code": "HDS ",
+        "value": "Human Developmental Sciences       "
+    },
+    {
+        "code": "HUM ",
+        "value": "Humanities Program                 "
+    },
+    {
+        "code": "INTL",
+        "value": "International Studies Program      "
+    },
+    {
+        "code": "JAPN",
+        "value": "Japanese Studies Program           "
+    },
+    {
+        "code": "JWSP",
+        "value": "Jewish Studies Program             "
+    },
+    {
+        "code": "LATI",
+        "value": "Latin American Studies Program     "
+    },
+    {
+        "code": "LING",
+        "value": "Linguistics                        "
+    },
+    {
+        "code": "LIT ",
+        "value": "Literature                         "
+    },
+    {
+        "code": "MMW ",
+        "value": "Making of the Modern World         "
+    },
+    {
+        "code": "MBC ",
+        "value": "Marine Biodiversity & Conservation "
+    },
+    {
+        "code": "MATS",
+        "value": "Materials Sci & Engineering Program"
+    },
+    {
+        "code": "MSED",
+        "value": "Math & Science Educ Jt Doc Program "
+    },
+    {
+        "code": "MATH",
+        "value": "Mathematics                        "
+    },
+    {
+        "code": "MAE ",
+        "value": "Mechanical & Aerospace Engineering "
+    },
+    {
+        "code": "MED ",
+        "value": "Medicine                           "
+    },
+    {
+        "code": "MCWP",
+        "value": "Muir College Writing Program       "
+    },
+    {
+        "code": "MUS ",
+        "value": "Music                              "
+    },
+    {
+        "code": "NENG",
+        "value": "NanoEngineering                    "
+    },
+    {
+        "code": "NEU ",
+        "value": "Neurosciences                      "
+    },
+    {
+        "code": "OBG ",
+        "value": "Obstetrics and Gynecology          "
+    },
+    {
+        "code": "OPTH",
+        "value": "Ophthalmology                      "
+    },
+    {
+        "code": "ORTH",
+        "value": "Orthopaedics                       "
+    },
+    {
+        "code": "PAEP",
+        "value": "PA Education Program               "
+    },
+    {
+        "code": "PATH",
+        "value": "Pathology                          "
+    },
+    {
+        "code": "PEDS",
+        "value": "Pediatrics                         "
+    },
+    {
+        "code": "PHAR",
+        "value": "Pharmacology                       "
+    },
+    {
+        "code": "PHIL",
+        "value": "Philosophy                         "
+    },
+    {
+        "code": "PHYS",
+        "value": "Physics                            "
+    },
+    {
+        "code": "POLI",
+        "value": "Political Science                  "
+    },
+    {
+        "code": "PSY ",
+        "value": "Psychiatry                         "
+    },
+    {
+        "code": "PSYC",
+        "value": "Psychology                         "
+    },
+    {
+        "code": "RMAS",
+        "value": "Radiation Medicine and Applied Sci "
+    },
+    {
+        "code": "RAD ",
+        "value": "Radiology                          "
+    },
+    {
+        "code": "RSM ",
+        "value": "Rady School of Management          "
+    },
+    {
+        "code": "RMED",
+        "value": "Reproductive Medicine              "
+    },
+    {
+        "code": "REV ",
+        "value": "Revelle College                    "
+    },
+    {
+        "code": "SOMI",
+        "value": "Sch of Med Interdisciplinary Crses "
+    },
+    {
+        "code": "SOE ",
+        "value": "School of Engineering              "
+    },
+    {
+        "code": "SOMC",
+        "value": "School of Medicine                 "
+    },
+    {
+        "code": "SIO ",
+        "value": "Scripps Institution of Oceanography"
+    },
+    {
+        "code": "SOC ",
+        "value": "Sociology                          "
+    },
+    {
+        "code": "SE  ",
+        "value": "Structural Engineering             "
+    },
+    {
+        "code": "SURG",
+        "value": "Surgery                            "
+    },
+    {
+        "code": "SYN ",
+        "value": "Synthesis Program                  "
+    },
+    {
+        "code": "THEA",
+        "value": "Theatre and Dance                  "
+    },
+    {
+        "code": "UNAF",
+        "value": "Unaffiliated                       "
+    },
+    {
+        "code": "USP ",
+        "value": "Urban Studies & Planning Prog      "
+    },
+    {
+        "code": "UROL",
+        "value": "Urology                            "
+    },
+    {
+        "code": "VIS ",
+        "value": "Visual Arts                        "
+    },
+    {
+        "code": "WARR",
+        "value": "Warren College                     "
+    },
+    {
+        "code": "WCWP",
+        "value": "Warren College Writing Program     "
+    },
+    {
+        "code": "WES ",
+        "value": "Wireless Embedded Systems          "
+    }
+]

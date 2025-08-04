@@ -1,16 +1,19 @@
 from .fetcher import UCSDFetcher
 from .parsers import UCSDParsers
 from .exceptions import *
+from .models import *
 
 
 class UCSDClassScheduleAPI:
     """Main API for accessing UCSD class schedule data."""
     
-    def __init__(self, enable_session: bool = True):
+    def __init__(self, enable_session: bool = True, preload_terms: bool = True):
         self.fetcher = UCSDFetcher(enable_session)
-        self.terms = self._load_terms()
-    
-    def _load_terms(self) -> dict[str, str]:
+        self.terms = self.load_terms()
+        if preload_terms:
+            self.terms = self.get_terms()
+
+    def load_terms(self) -> dict[str, str]:
         """Load available terms on initialization."""
         html = self.fetcher.fetch_menu_page()
         return UCSDParsers.parse_terms(html)
@@ -21,17 +24,25 @@ class UCSDClassScheduleAPI:
             raise Exception("Initialization failed to load terms")
         return self.terms
 
-    def get_departments(self, term: str) -> list[str]:
+    def get_departments(self, term: str) -> dict[DeptCode, DeptName]:
         """Get departments for a specific term."""
         if term not in self.terms:
             raise InvalidTermError(term)
-        return self.fetcher.fetch_departments_json(term)
+        json_data: list[dict[DeptCode, DeptName]] = self.fetcher.fetch_departments_json(term)
+        departments: dict[DeptCode, DeptName] = {}
+        for data in json_data:
+            departments[data["code"].strip()] = data["value"].strip()
+        return departments
     
-    def get_subject_list(self, term: str) -> list[str]:
+    def get_subjects(self, term: str) -> list[str]:
         """Get subjects for a specific term."""
         if term not in self.terms:
             raise InvalidTermError(term)
-        return self.fetcher.fetch_subjects_json(term)
+        subjects = self.fetcher.fetch_subjects_json(term)
+        for subject in subjects:
+            subject["code"] = subject["code"].strip()
+            subject["value"] = subject["value"][subject["value"].find("-")+1:].strip()
+        return subjects
 
     def _get_schedule_form_inputs(self) -> list[tuple[str, str]]:
         """Get form inputs needed for schedule search."""
