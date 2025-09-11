@@ -2,7 +2,7 @@
 HTML parsers for UCSD schedule data.
 """
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString, Tag
 from typing import Dict, List, Tuple
 
 
@@ -19,13 +19,17 @@ class UCSDParsers:
             
         Returns:
             Dictionary mapping term codes to term names
+            {code: name}
+
+            Ex:
+            {FA25: "Fall 2025", SP25: "Spring 2025", ...}
         """
-        soup = BeautifulSoup(html_content, "lxml")
-        terms = {}
+        soup : BeautifulSoup = BeautifulSoup(html_content, "lxml")
+        terms : dict[str, str] = {}
         
-        term_select = soup.find(id="selectedTerm")
-        if not term_select:
-            raise Exception("Could not find terms dropdown in HTML")
+        term_select : Tag | NavigableString | None = soup.find(id="selectedTerm")
+        if not isinstance(term_select, Tag):
+            raise Exception("Could not find terms dropdown as valid Tag")
             
         for option in term_select.find_all("option"):
             term_code = option.get("value")
@@ -49,13 +53,13 @@ class UCSDParsers:
         soup = BeautifulSoup(html_content, "lxml")
         form_inputs = []
         
-        form = soup.find("form", id="socFacSearch")
-        if not form:
+        form : Tag | NavigableString | None = soup.find("form", id="socFacSearch")
+        if not isinstance(form, Tag):
             raise Exception("Could not find schedule search form")
             
-        tabs_sub = form.find(id="tabs-sub")
-        if not tabs_sub:
-            raise Exception("Could not find form inputs section")
+        tabs_sub : Tag | NavigableString | None = form.find(id="tabs-sub")
+        if not isinstance(tabs_sub, Tag):
+            raise Exception("Could not find form inputs section as valid Tag")
             
         for input_elem in tabs_sub.find_all("input"):
             name = input_elem.get("name")
